@@ -18,5 +18,11 @@ public class UserRegistration {
         String lastName = scanner.next();
         System.out.println(Pattern.matches("^[A-Z][a-z]{2,}$", lastName));
     }
+
+    public void checkEmail() {
+        System.out.print("Enter email Id : ");
+        String email = scanner.next();
+        System.out.println(Pattern.matches("^(abc)[.]{1}[a-z]*[@]{1}(bl.co)(.in)$", email));
+    }
 }
 
