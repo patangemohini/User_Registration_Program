@@ -7,10 +7,16 @@ public class UserRegistration {
 
     Scanner scanner = new Scanner(System.in);
 
-    public void checkFirstName(){
+    public void checkFirstName() {
         System.out.println("Enter First name starts with Cap and has minimum 3 characters: ");
         String firstName = scanner.next();
-        System.out.println(Pattern.matches("^[A-Z][a-z]{2,}$" , firstName));
+        System.out.println(Pattern.matches("^[A-Z][a-z]{2,}$", firstName));
+    }
 
+    public void checkLastName() {
+        System.out.println("Enter last name starts with Cap and has minimum 3 characters: ");
+        String lastName = scanner.next();
+        System.out.println(Pattern.matches("^[A-Z][a-z]{2,}$", lastName));
     }
 }
+
