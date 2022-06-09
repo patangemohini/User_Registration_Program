@@ -8,6 +8,7 @@ public class UserRegistrationMain {
     static final int LAST_NAME = 2;
     static final int EMAIL = 3;
     static final int PHONE_NUMBER = 4;
+    static final int PASSWORD = 5;
 
     public static void main(String[] args) {
         System.out.println("Welcome to user registration program!!");
@@ -30,8 +31,12 @@ public class UserRegistrationMain {
             case PHONE_NUMBER:
                 userRegistration.checkPhoneNumber();
                 break;
+            case PASSWORD:
+                userRegistration.checkValidPassword();
+                break;
             default:
                 System.out.println("invalid option!");
+                break;
         }
     }
 }
