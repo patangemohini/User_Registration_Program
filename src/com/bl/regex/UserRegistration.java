@@ -24,5 +24,11 @@ public class UserRegistration {
         String email = scanner.next();
         System.out.println(Pattern.matches("^(abc)[.]{1}[a-z]*[@]{1}(bl.co)(.in)$", email));
     }
+
+    public void checkPhoneNumber() {
+        System.out.print("Enter phone number : ");
+        String phoneNumber = scanner.next();
+        System.out.println(Pattern.matches("(91)[0-9]{10}", phoneNumber));
+    }
 }
 

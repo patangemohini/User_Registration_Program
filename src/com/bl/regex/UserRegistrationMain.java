@@ -7,6 +7,7 @@ public class UserRegistrationMain {
     static final int FIRST_NAME = 1;
     static final int LAST_NAME = 2;
     static final int EMAIL = 3;
+    static final int PHONE_NUMBER = 4;
 
     public static void main(String[] args) {
         System.out.println("Welcome to user registration program!!");
@@ -25,6 +26,9 @@ public class UserRegistrationMain {
                 break;
             case EMAIL:
                 userRegistration.checkEmail();
+                break;
+            case PHONE_NUMBER:
+                userRegistration.checkPhoneNumber();
                 break;
             default:
                 System.out.println("invalid option!");
