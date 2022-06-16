@@ -1,3 +1,4 @@
+/*
 package com.bl.regex;
 
 import java.util.Scanner;
@@ -21,19 +22,19 @@ public class UserRegistrationMain {
 
         switch (option) {
             case FIRST_NAME:
-                userRegistration.checkFirstName();
+                userRegistration.checkFirstName("Mohini");
                 break;
             case LAST_NAME:
-                userRegistration.checkLastName();
+                userRegistration.checkLastName("Patange");
                 break;
             case EMAIL:
-                userRegistration.checkEmail();
+                userRegistration.checkEmail("abc.xyz@bl.co.in");
                 break;
             case PHONE_NUMBER:
-                userRegistration.checkPhoneNumber();
+                userRegistration.checkPhoneNumber("91 9359492123");
                 break;
             case PASSWORD:
-                userRegistration.checkValidPassword();
+                userRegistration.checkValidPassword("Patangemohi@123");
                 break;
             case SAMPLE_EMAIL:
                 EmailSample emailSample = new EmailSample();
@@ -45,3 +46,4 @@ public class UserRegistrationMain {
         }
     }
 }
+*/
