@@ -1,4 +1,4 @@
-package com.bl.regex;
+package com.bridgelabz.userregistrationjunit;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -26,7 +26,7 @@ public class UserRegistrationParameterisedTest {
     }
 
     @Test
-    public void givenEmailAddress_ShouldReturnAsExpected(){
+    public void givenEmailAddress_ShouldReturnAsExpected() throws InvalidException {
         boolean testResult = userRegistration.validMail(testEmail);
         Assert.assertEquals(testResult, testResult);
 

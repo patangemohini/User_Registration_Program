@@ -1,4 +1,4 @@
-package com.bl.regex;
+package com.bridgelabz.userregistrationjunit;
 
 import java.util.ArrayList;
 import java.util.regex.Matcher;
