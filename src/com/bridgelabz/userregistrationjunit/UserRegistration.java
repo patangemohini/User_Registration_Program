@@ -54,14 +54,8 @@ public class UserRegistration {
         return true;
     }
 
-    public boolean validMail(String email) throws InvalidException {
-        boolean isValid = Pattern.matches("^[\\w+_-]+(?:\\.[\\w+_-]+)*[@][\\w]{1,}([.]{1}[a-z]{2,}){1,2}$", email);
-        if (!isValid) {
-            System.out.println("Separated email is not valid");
-            throw new InvalidException("Invalid");
-        }
-        System.out.println("Separated email is valid");
-        return true;
+    public boolean validMail(String email)  {
+         return Pattern.matches("^[\\w+_-]+(?:\\.[\\w+_-]+)*[@][\\w]{1,}([.]{1}[a-z]{2,}){1,2}$", email);
     }
 }
 

@@ -26,7 +26,7 @@ public class UserRegistrationParameterisedTest {
     }
 
     @Test
-    public void givenEmailAddress_ShouldReturnAsExpected() throws InvalidException {
+    public void givenEmailAddress_ShouldReturnAsExpected() {
         boolean testResult = userRegistration.validMail(testEmail);
         Assert.assertEquals(testResult, testResult);
 
